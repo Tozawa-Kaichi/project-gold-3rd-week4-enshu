@@ -93,7 +93,6 @@ public class ObjectManager : MonoBehaviour
     /// </summary>
     void ShowDistance()
     {
-
         Array.ForEach(_blocks, b => 
         {float distance = (Vector3.Distance(_crystal.position, b.transform.position)); b.Label =distance.ToString("F1"); });
     }
